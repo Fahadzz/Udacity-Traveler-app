@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Traveler planner" />
+    <meta name="keywords" content="Traveler planner, plann your next trip" />
+    <meta name="author" content="Fahad Alzahrani" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel App</title>
+    <!-- <script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+      defer
+    ></script> -->
+  </head>
+  <body>
+    <%= require('html-loader!./assets/navigation.html').default %>
+    <h1 class="heading__primary--sub wrapper--sm">Manage your plans here</h1>
+    <div class="form__main">
+      <div class="form wrapper--sm">
+        <input
+          class="input"
+          type="text"
+          name="location"
+          id="location"
+          placeholder="Location: e.g. Japan"
+        />
+        <input class="input" type="date" name="date" id="date" required />
+        <input id="btn" class="input" type="submit" value="submit" />
+      </div>
+    </div>
+    <section id="tripDetails"></section>
+    <%= require('html-loader!./assets/footer.html').default %>
+  </body>
+</html>

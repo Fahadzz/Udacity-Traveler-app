@@ -1,0 +1,97 @@
+@media (min-width: 487px) {
+  .categories {
+    .category {
+      height: 50rem;
+    }
+  }
+  .card {
+    width: 90vw;
+    grid-template-columns: 40fr 60fr;
+    grid-template-rows: auto;
+    .card__img img {
+      border-radius: 10px 0 0 10px;
+    }
+    .card__text {
+      flex-direction: row;
+      justify-content: space-around;
+      padding: 2rem 1rem;
+    }
+  }
+}
+@media (min-width: 769px) {
+  .categories {
+    flex-direction: row;
+    padding: 0 7.2rem;
+    gap: 3rem;
+    .category {
+      height: 40rem;
+    }
+    margin-bottom: 10rem;
+  }
+  .hero {
+    background-position-x: 0;
+    height: 80vh;
+  }
+  .header {
+    padding: 3rem 7.2rem;
+  }
+  // Footer
+  .footer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10rem;
+    padding: 8rem 7.2rem;
+  }
+  .wrapper--sm {
+    padding: 0 7.2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .card {
+    width: 90vw;
+    grid-template-columns: 30fr 70fr;
+    grid-template-rows: auto;
+  }
+}
+
+// I may move it to the nav scss
+@media (min-width: 1300px) {
+  .nav__main {
+    list-style: none;
+    display: flex;
+    gap: 4.8rem;
+    position: relative;
+    background-color: rgba(242, 236, 255, 0.97);
+    width: 100%;
+    height: fit-content;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    transform: translateX(0);
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    background-color: #fafafa;
+    font-size: 2.5rem;
+  }
+  .nav-mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 1441px) {
+  .categories {
+    .category {
+      height: 41rem;
+    }
+  }
+  .footer {
+    gap: 20rem;
+  }
+  .card {
+    width: 90vw;
+    grid-template-columns: 25fr 75fr;
+    grid-template-rows: auto;
+  }
+}

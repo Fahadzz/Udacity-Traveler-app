@@ -1,0 +1,52 @@
+<footer class="footer">
+  <div class="brand">
+    <p class="heading__tertiary">TravelerHub</p>
+    <div class="icons">
+      <ion-icon class="icon" name="logo-linkedin"></ion-icon>
+      <ion-icon class="icon" name="logo-twitter"></ion-icon>
+      <ion-icon class="icon" name="logo-facebook"></ion-icon>
+    </div>
+    <div class="rights"></div>
+  </div>
+  <div class="contact">
+    <p class="heading__tertiary">Contact us</p>
+
+    <a href="mailto:Fahadaqa@gmail.com" class="footer__link"
+      >Fahadaqa@gmail.com</a
+    >
+  </div>
+  <div class="company">
+    <p class="heading__tertiary">Company</p>
+    <a href="#" class="footer__link">About TravelerHub</a>
+    <a href="#" class="footer__link">For Business</a>
+  </div>
+  <div class="resources">
+    <p class="heading__tertiary">Resources</p>
+    <a href="#" class="footer__link">Traveler Guide</a>
+  </div>
+</footer>
+
+<script
+  type="module"
+  src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+></script>
+<script
+  nomodule
+  src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+></script>
+<script>
+  const navBtn = document.querySelector(".nav-mobile");
+  const header = document.querySelector(".header");
+
+  navBtn.addEventListener("click", () => {
+    header.classList.toggle("nav-open");
+  });
+
+  // Check that service workers are supported
+  // if ("serviceWorker" in navigator) {
+  //   // Use the window load event to keep the page load performant
+  //   window.addEventListener("load", () => {
+  //     navigator.serviceWorker.register("/service-worker.js");
+  //   });
+  // }
+</script>

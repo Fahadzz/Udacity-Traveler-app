@@ -4,8 +4,16 @@
 
 ## Before using it:
 
-    Make sure you clean the site data for the localhost
-    for the app to work properly
+1. Make sure you clean the site data for the localhost for the app to work properly
+2. also make sure to make `.env` file with this content
+
+   - and meke sure its content is like this:
+
+   ```
+   USER = <geonames__api-user>
+   WEATHER_KEY = <api-key>
+   PIXABAY_KEY = <api-key>
+   ```
 
 ## How to use it:
 

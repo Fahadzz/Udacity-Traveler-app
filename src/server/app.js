@@ -50,3 +50,5 @@ app.post("/data", async (req, res) => {
 app.listen(port, () => {
     console.log(`Connected on port: ${port} !!`);
 });
+
+module.exports = app

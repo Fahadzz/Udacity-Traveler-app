@@ -28,7 +28,7 @@ exports.weatherData = async (lat, lng) => {
 
 exports.pixabayApi = async (term) => {
     let res = await axios.post(
-        `https://pixabay.com/api/?key=${process.env.PIXABAY_KEY}&q=${term}&editors_choice=true&image_type=photo&orientation=horizontal`
+        `https://pixabay.com/api/?key=${process.env.PIXABAY_KEY}&q=${term}&category=travel&orientation=horizontal`
     );
 
     try {

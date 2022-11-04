@@ -26,6 +26,7 @@ app.get("/", (req, res) => {
 });
 app.get('/data', (req, res) => {
     // send all data
+    // i will use it later to add the data to localStorage
     res.send(data)
 })
 app.post("/data", async (req, res) => {
@@ -33,8 +34,7 @@ app.post("/data", async (req, res) => {
     const loc = req.body.location;
     const date = req.body.date;
     const geo = await request.geoNames(loc)
-    // const temp = await request.weatherData(geo.lat, geo.lng)
-    const temp = 30
+    const temp = await request.weatherData(geo.lat, geo.lng)
     const img = await request.pixabayApi(loc)
     // Constructing Data object
     const tempData = {

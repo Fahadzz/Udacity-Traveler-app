@@ -22,3 +22,10 @@ exports.inputValidation = (inp) => {
         return true;
     }
 };
+
+
+exports.removeFromValidation = (city) => {
+    let idx = validateArr.indexOf(city);
+    validateArr.splice(idx, 1)
+    console.log(validateArr);
+}

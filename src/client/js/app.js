@@ -29,6 +29,9 @@ exports.generateCardServer = (data) => {
     btns.forEach(btn => {
         btn.addEventListener("click", (e) => {
             let curr = e.currentTarget
+            // get city name
+            const cityName = curr.parentElement.children[1].children[0].children[0].innerText.split("- ")[1]
+            Client.removeFromValidation(cityName)
             curr.parentElement.remove();
         })
     })

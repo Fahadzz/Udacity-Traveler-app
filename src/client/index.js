@@ -6,12 +6,13 @@ import "./styles/footer.scss"
 import "./styles/queries.scss"
 
 import { btn } from "./js/buttonHandler"
-import { inputValidation } from "./js/validation"
+import { inputValidation, removeFromValidation } from "./js/validation"
 import { calculateDate } from "./js/dateCalculation"
 import { generateCardServer } from "./js/app"
 export {
     btn,
     inputValidation,
+    removeFromValidation,
     calculateDate,
     generateCardServer
 }

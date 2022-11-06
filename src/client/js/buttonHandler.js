@@ -4,7 +4,7 @@ const btn = document.getElementById("btn");
 btn.addEventListener("click", (e) => {
     console.log("from the submit");
     // store user inputs to variables
-    const location = document.getElementById("location").value.toLowerCase()
+    const location = document.getElementById("location").value.toLowerCase().trim()
     const date = document.getElementById("date").value
 
     // send the data to the server

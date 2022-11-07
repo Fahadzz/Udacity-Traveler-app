@@ -4,7 +4,7 @@ const axios = require('axios');
 // API Functions calls
 exports.geoNames = async (location) => {
     let res = await axios.post(
-        `http://api.geonames.org/searchJSON?q=${location}&maxRows=1&username=${process.env.USER}`
+        `http://api.geonames.org/searchJSON?q=${location}&maxRows=1&username=${process.env.GEONAMES_KEY}`
     );
     try {
         const resData = await res.data.geonames[0]

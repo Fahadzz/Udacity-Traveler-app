@@ -10,7 +10,7 @@
    - and meke sure its content is like this:
 
    ```
-   USER = <geonames__api-user>
+   GEONAMES_KEY = <geonames__api-user>
    WEATHER_KEY = <api-key>
    PIXABAY_KEY = <api-key>
    ```
